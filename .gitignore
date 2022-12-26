@@ -475,3 +475,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Debug files for VSCode
+.vscode/launch.json
+.vscode/tasks.json
