@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 
 internal class Program
 {
@@ -8,11 +9,7 @@ internal class Program
 
         var app = builder.Build();
 
-        app.MapPost("/", async (ctx) => {
-            await ctx.Response.WriteAsync("Hello, world!");
-            return;
-        });
-
+        app.MapControllers();
         app.Run();
     }
 }
